@@ -18,6 +18,8 @@
 
 **[Linkedin](https://www.linkedin.com/in/sofya-pivovarova/)**
 
+**Discord** spvvrv (@spvvrv)
+
 ---
 
 <h3> Education: </h3>
@@ -27,12 +29,12 @@ Philological, Advertising and public relations, 2014-2018
 
 <h3> Courses: </h3>
 
-RS Shcool JS / FRONT-END (RU), 2021 - present
+RS Shcool JS / FRONT-END (RU), 2022 - present
 
 ---
 
 <h3> About Me </h3>
-<p> Recently I realized that one “business of life” can not be limited, so I decided on global changes. For 7 years I have studied my past direction from and to, so now I want to scale my successes in other areas. Ready for full immersion in processes, projects and team. From me, involvement, dedication, control, development of myself and colleagues, and much more.
+<p> Recently I realized that one “business of life” can not be limited, so I decided on global changes. For 8 years I have studied my past direction from and to, so now I want to scale my successes in other areas. Ready for full immersion in processes, projects and team. From me, involvement, dedication, control, development of myself and colleagues, and much more.
 I think that front-end development is the most suitable business for revealing my talents.</p> 
 
 ---
@@ -41,17 +43,37 @@ I think that front-end development is the most suitable business for revealing m
 
 * HTML
 * CSS
-* JavaScript (Basic)
+* JavaScript
 * Git/GitHub
 
 <h3> Code example </h3>
-
+Example for modal_window_project: 
+https://spvvrv.github.io/modal__window/
 ```
-function sum(a, b) {
-  return a + b;
-}
-let result = sum(1, 2);
-alert( result );
+let popupBg = document.querySelector(".popup__bg");
+let popup = document.querySelector(".popup");
+let openPopupButtons = document.querySelectorAll(".open-popup");
+let closePopupButton = document.querySelector(".close-popup");
+
+openPopupButtons.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    e.preventDefault();
+    popupBg.classList.add("active");
+    popup.classList.add("active");
+  });
+});
+
+closePopupButton.addEventListener("click", () => {
+  popupBg.classList.remove("active");
+  popup.classList.remove("active");
+});
+
+document.addEventListener("click", (e) => {
+  if (e.target === popupBg) {
+    popupBg.classList.remove("active");
+    popup.classList.remove("active");
+  }
+});
 ```
 
 ---
