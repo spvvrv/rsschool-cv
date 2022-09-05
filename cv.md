@@ -47,8 +47,10 @@ I think that front-end development is the most suitable business for revealing m
 * Git/GitHub
 
 <h3> Code example </h3>
-Example for modal_window_project: 
-https://spvvrv.github.io/modal__window/
+
+
+**[Example for modal_window_project: ](https://spvvrv.github.io/modal__window/)**
+
 ```
 let popupBg = document.querySelector(".popup__bg");
 let popup = document.querySelector(".popup");
@@ -74,6 +76,7 @@ document.addEventListener("click", (e) => {
     popup.classList.remove("active");
   }
 });
+
 ```
 
 ---
