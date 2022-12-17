@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;600&display=swap');
+
+/* General styles start */
+* {
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Chivo Mono', monospace;
+    font-size: 28px;
+    color: #123c69;
+    background-color: #f7f9fb;
+}
+
+div {
+    margin: 0 auto;
+}
+
+.wrapper {
+padding: 15px;
+}
+
+.wrapper h3 {
+    text-align: center;
+    color: #5085a5;
+}
+
+
+.main__list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.main__item {
+    margin-right: 15px;
+}
+
+ul{
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #31708e;
+}
+p {
+    text-align: justify;
+}
+
+
+/* General styles end */
+
+
+
+
+
+
+/* Header styles start */
+
+.header__wrapper {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.header__navigation-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-bottom: 50px;
+    position: fixed;
+    margin: 0;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: .2s linear;
+padding: 15px;
+background-color: #8fc1e3;
+font-size: 24px;
+}
+
+.header__navigation-list a {
+    color: #eee2dc;
+}
+
+.header__navigation-item {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.header__info {
+    display: flex;
+    margin-top: 80px;
+    text-align: center;
+    align-items: center;
+}
+
+.header__logo {
+border-radius: 50%;
+}
+
+
+
+/* Header styles end */
+
+
+
+
+
+
+/* Main styles start */
+.main__wrapper{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.main__aside{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 10px;
+    margin-right: 30px;
+
+}
+
+.block__main{
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    width: fit-content;
+    padding: 10px;
+    background-color: #f7f9fb;
+}
+
+.main__block-projects h3 {
+    margin-top: 0;
+}
+
+.main__block-experience li {
+list-style:disc;
+padding-bottom: 15px;
+}
+.main__block-experience ul {
+    margin-left: 25px;
+}
+.project {
+position: relative;
+width: 100%;
+height: 100%;
+}
+
+.project__image {
+    background: url(./img/hacker-news.png) top center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align:right;
+    z-index: 0;
+    
+}
+
+.project:after {
+    display: block;
+    position: absolute;
+    content: '';
+    background: #31708e;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.project__title {
+    color: #f7f9fb;
+    z-index: 2;
+    font-size: 36px;
+    height: 400px;
+}
+
+.project__image-second {
+background: url(./img/convercy.png);
+}
+.project__image-third {
+    background: url(./img/taggame.png);
+    }
+
+.project__image-example {
+    background: url(./img/codeExample.png);
+}
+
+.project__example:after {
+    opacity: 0;
+
+}
+
+/* Main styles end */
+
+/* Footer styles start */
+.footer__wrapper {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+align-items: center;
+background-color: #8fc1e3;
+width: 100%;
+color: #f7f9fb;
+}
+/* Footer styles end */
