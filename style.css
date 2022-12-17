@@ -460,6 +460,12 @@ h1 {
     }
 }
 
+@media screen and (max-width: 360px) {
+    .projects__code {
+        display: none;
+    }
+}
+
 
 
 
