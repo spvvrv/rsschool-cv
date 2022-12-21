@@ -13,35 +13,33 @@
 
     <header class="header" id="header">
         <div class="wrapper header__wrapper">
-            <div>
-                <nav class="header__navigation">
-                    <ul class="header__navigation-list">
-                        <li class="header__navigation-item">
-                            <a href="#about" class="header__link">About</a>
-                        </li>
-                        <li class="header__navigation-item">
-                            <a href="#skills" class="header__link">Skills</a>
-                        </li>
-                        <li class="header__navigation-item">
-                            <a href="#projects" class="header__link">Recent projects</a>
-                        </li>
-                        <li class="header__navigation-item">
-                            <a href="#education" class="header__link">Education</a>
-                        </li>
-                        <li class="header__navigation-item">
-                            <a href="#example" class="header__link">Code example</a>
-                        </li>
-                    </ul>
-                    <div class="header__nav-close">
-                        <span class="header__nav-close-line"></span>
-                        <span class="header__nav-close-line"></span>
-                    </div>
-                </nav>
-                <div class="header__burger burger">
-                    <span class="burger__line burger__line_first"></span>
-                    <span class="burger__line burger__line_second"></span>
-                    <span class="burger__line burger__line_third"></span>
+            <nav class="header__navigation">
+                <ul class="header__navigation-list">
+                    <li class="header__navigation-item">
+                        <a href="#about" class="header__link">About</a>
+                    </li>
+                    <li class="header__navigation-item">
+                        <a href="#skills" class="header__link">Skills</a>
+                    </li>
+                    <li class="header__navigation-item">
+                        <a href="#projects" class="header__link">Recent projects</a>
+                    </li>
+                    <li class="header__navigation-item">
+                        <a href="#education" class="header__link">Education</a>
+                    </li>
+                    <li class="header__navigation-item">
+                        <a href="#example" class="header__link">Code example</a>
+                    </li>
+                </ul>
+                <div class="header__nav-close">
+                    <span class="header__nav-close-line"></span>
+                    <span class="header__nav-close-line"></span>
                 </div>
+            </nav>
+            <div class="header__burger burger">
+                <span class="burger__line burger__line_first"></span>
+                <span class="burger__line burger__line_second"></span>
+                <span class="burger__line burger__line_third"></span>
             </div>
 
             <div class="header__info">
@@ -228,7 +226,7 @@
 
                     <div class="projects">
                         <a href="https://codesandbox.io/s/github/spvvrv/modal__window">
-                            <p>Follow the link to see full code example on CodeSandBox</p>
+                            <p>Follow the <span>link</span> to see full code example on CodeSandBox</p>
                             <div class="project">
                                 <div class="projects project__image project__image-example">
                                     <div class="project__effect">
@@ -242,14 +240,12 @@
                                 </div>
                             </div>
                         </a>
-    <code class="projects__code">                                            
-        let popupBg = document.querySelector(".popup__bg");
-        let popup = document.querySelector(".popup");
-        let openPopupButtons = document.querySelectorAll(".open-popup");
-        let closePopupButton = document.querySelector(".close-popup");
-    </code>
-
-
+                        <code class="projects__code">
+                                <p>let popupBg = document.querySelector(".popup__bg"); </p>
+                                <p>let popup = document.querySelector(".popup");</p>
+                                <p>let openPopupButtons = document.querySelectorAll(".open-popup");</p>
+                                <p>let closePopupButton = document.querySelector(".close-popup");</p>
+                            </code>
                     </div>
 
                 </section>
