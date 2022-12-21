@@ -23,8 +23,10 @@ body {
 
 
 .wrapper {
-    padding: 15px;
+    max-width: 1440px;
 }
+
+
 
 .wrapper h3 {
     text-align: center;
@@ -65,6 +67,9 @@ p {
     padding-bottom: 25px;
 }
 
+span{
+    color:tomato;
+}
 
 /* General styles end */
 
@@ -76,20 +81,21 @@ p {
 /* Header styles start */
 
 .header__wrapper {
-    padding-top: 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header__navigation{
+    margin: 0 auto;
 }
 
 .header__navigation-list {
     display: flex;
+    max-width: 1440px;
     justify-content: space-around;
     flex-wrap: nowrap;
-    position: fixed;
-    margin: 0;
-    z-index: 999;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    background-color: #8fc1e3;
+    width: 100%;
+    background-color: #123c69;
     font-size: 18px;
 }
 
@@ -111,6 +117,7 @@ p {
 .header__navigation-item:focus {
     opacity: .75;
 }
+
 
 .header__info {
     display: flex;
@@ -174,9 +181,12 @@ h1 {
 
 /* Main styles start */
 .main__wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 15px;
 }
 
 .main__aside {
@@ -241,7 +251,7 @@ h1 {
     display: none;
     position: absolute;
     content: '';
-    background: #31708e;
+    background: #123c69;
     opacity: 0.8;
     width: 100%;
     height: 350px;
@@ -258,18 +268,20 @@ h1 {
 .project__image:hover .project__effect {
     display: block;
     overflow: hidden;
+
 }
 
 .project__image-second {
-    background: url(./img/convercy.png) center no-repeat;
+    background: url(./img/currencyConverter.png) center no-repeat;
 }
 
 .project__image-third {
-    background: url(./img/taggame.png) no-repeat;
+    background: url(./img/taggame.png) center no-repeat;
+    margin-bottom: 50px;
 }
 
 .project__image-example {
-    background: url(./img/codeExample.png)no-repeat;
+    background: url(./img/codeExample.png)center no-repeat;
 }
 
 .projects__code {
@@ -286,7 +298,7 @@ h1 {
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     text-align: center;
-    background-color: #8fc1e3;
+    background-color: #123c69;
     color: #f7f9fb;
     width: 100vw;
     margin: 0 auto;
@@ -373,7 +385,9 @@ h1 {
 
 @media screen and (max-width: 730px) {
     .header__burger {
-        display: block
+        display: block;
+        top: 20px;
+        left: 20px;
     }
 
     .header__navigation {
@@ -382,7 +396,7 @@ h1 {
         position: fixed;
         top: 0;
         left: 0;
-        background-color: #f7f9fb;
+        background-color: #123c69;
         z-index: 10;
         padding: 75px;
         transform: translateX(100%);
@@ -417,6 +431,7 @@ h1 {
         font-size: 28px;
         line-height: 35px;
     }
+
 
     .header__nav-close {
         width: 40px;
